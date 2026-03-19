@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Daily Juice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #FFECB3 0%, #FFFFFF 100%);
+        }
+        
+        .error-container {
+            max-width: 600px;
+        }
+        
+        .error-code {
+            font-size: clamp(6rem, 20vw, 12rem);
+            font-weight: 900;
+            font-family: var(--font-secondary);
+            background: linear-gradient(135deg, #FF6F00, #F44336);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        
+        .error-title {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+        
+        .error-message {
+            font-size: 1.125rem;
+            color: var(--gray);
+            margin-bottom: 2rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .fruit-decoration {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-container">
+            <div class="fruit-decoration">🍊 🍋 🍎</div>
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">Oops! This page has gone sour.</h2>
+            <p class="error-message">
+                The page you're looking for doesn't exist or has been moved. 
+                Let's get you back to fresh content!
+            </p>
+            <div class="error-actions">
+                <a href="index.html" class="btn btn-primary">Back to Home</a>
+                <a href="mailto:hello@dailyjuice.info" class="btn btn-outline">Contact Support</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

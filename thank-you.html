@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Daily Juice! | Thank You</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap">
+    
+    <!-- Google Analytics - REPLACE G-XXXXXXXXXX WITH YOUR ACTUAL MEASUREMENT ID -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script> -->
+    
+    <style>
+        .thank-you-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #FFECB3 0%, #FFFFFF 100%);
+        }
+        
+        .thank-you-container {
+            max-width: 700px;
+            text-align: center;
+        }
+        
+        .success-icon {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            animation: bounce 1s ease infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .thank-you-title {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            background: linear-gradient(135deg, #FF6F00, #F44336);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        
+        .thank-you-message {
+            font-size: 1.25rem;
+            color: var(--dark);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .next-steps {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+        
+        .next-steps h3 {
+            color: var(--orange);
+            margin-bottom: 1rem;
+        }
+        
+        .next-steps ul {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .next-steps li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--light-gray);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        
+        .next-steps li:last-child {
+            border-bottom: none;
+        }
+        
+        .checkmark {
+            color: var(--green);
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .welcome-fruits {
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="thank-you-section">
+        <div class="thank-you-container">
+            <div class="success-icon">✅</div>
+            <h1 class="thank-you-title">Welcome to the Family!</h1>
+            <p class="thank-you-message">
+                Thank you for joining the Daily Juice community. 
+                You're now part of a movement that believes in shared wisdom, real connections, and building something fruitful together.
+            </p>
+            
+            <div class="welcome-fruits">🍊 🍋 🍎 🍇 🍓</div>
+            
+            <div class="next-steps">
+                <h3>What Happens Next?</h3>
+                <ul>
+                    <li>
+                        <span class="checkmark">✓</span>
+                        <span>You'll receive a confirmation email shortly with your membership details</span>
+                    </li>
+                    <li>
+                        <span class="checkmark">✓</span>
+                        <span>Access the community portal to start engaging with other members</span>
+                    </li>
+                    <li>
+                        <span class="checkmark">✓</span>
+                        <span>Explore exclusive content, bonus episodes, and member-only discussions</span>
+                    </li>
+                    <li>
+                        <span class="checkmark">✓</span>
+                        <span>Get ready to share your own juice – we'd love to feature you!</span>
+                    </li>
+                    <li>
+                        <span class="checkmark">✓</span>
+                        <span>Watch your progress as we grow toward 10,000 members and our fruit farm goal</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="https://whop.com/joined/daily-juice/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+                    Access Community Portal
+                </a>
+                <a href="index.html" class="btn btn-outline btn-large">
+                    Back to Home
+                </a>
+            </div>
+            
+            <p style="margin-top: 2rem; color: var(--gray); font-size: 0.9rem;">
+                Questions? Email us at <a href="mailto:hello@dailyjuice.info" style="color: var(--orange);">hello@dailyjuice.info</a>
+            </p>
+        </div>
+    </section>
+    
+    <!-- Track thank you page view -->
+    <script>
+        // Google Analytics conversion tracking (if installed)
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'conversion', {
+                'event_category': 'subscription',
+                'event_label': 'thank_you_page_view'
+            });
+        }
+        
+        console.log('%c🎉 Welcome to Daily Juice!', 'color: #FF6F00; font-size: 24px; font-weight: bold;');
+        console.log('%cThank you for joining the community!', 'color: #4CAF50; font-size: 16px;');
+    </script>
+</body>
+</html>
