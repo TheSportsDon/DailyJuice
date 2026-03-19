@@ -1,0 +1,21 @@
+<svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6F00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC107;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Juice drop icon -->
+  <path d="M25 5 C25 5 10 25 10 35 C10 42 16 48 25 48 C34 48 40 42 40 35 C40 25 25 5 25 5 Z" fill="url(#logoGradient)"/>
+  
+  <!-- Text "Daily" -->
+  <text x="50" y="22" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="#FF6F00">DAILY</text>
+  
+  <!-- Text "Juice" -->
+  <text x="50" y="42" font-family="Arial, sans-serif" font-weight="900" font-size="24" fill="#F44336">JUICE</text>
+  
+  <!-- Underline swoosh -->
+  <path d="M45 45 Q100 50 150 45" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

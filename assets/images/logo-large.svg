@@ -1,0 +1,37 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="heroLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6F00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC107;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Large juice drop icon -->
+  <path d="M150 30 C150 30 90 110 90 150 C90 180 114 210 150 210 C186 210 210 180 210 150 C210 110 150 30 150 30 Z" fill="url(#heroLogoGradient)" filter="url(#shadow)"/>
+  
+  <!-- Highlight on drop -->
+  <ellipse cx="135" cy="140" rx="15" ry="25" fill="#FFFFFF" opacity="0.5"/>
+  
+  <!-- Text "THE" -->
+  <text x="240" y="60" font-family="Arial, sans-serif" font-weight="800" font-size="32" fill="#5E35B1" letter-spacing="2">THE</text>
+  
+  <!-- Text "DAILY" -->
+  <text x="240" y="120" font-family="Arial, sans-serif" font-weight="900" font-size="64" fill="#5E35B1" letter-spacing="3">DAILY</text>
+  
+  <!-- Text "JUICE" -->
+  <text x="240" y="190" font-family="Arial, sans-serif" font-weight="900" font-size="96" fill="#FF6F00" letter-spacing="4">JUICE</text>
+  
+  <!-- Underline swoosh -->
+  <path d="M230 210 Q350 230 470 210" stroke="url(#heroLogoGradient)" stroke-width="8" fill="none" stroke-linecap="round" filter="url(#shadow)"/>
+  
+  <!-- Small decorative fruits -->
+  <circle cx="520" cy="80" r="12" fill="#FF6F00"/>
+  <circle cx="540" cy="90" r="10" fill="#F44336"/>
+  <circle cx="510" cy="100" r="9" fill="#4CAF50"/>
+</svg>
