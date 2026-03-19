@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize all components
     initMobileMenu();
-    initPodcastPlayer();
     initSmoothScroll();
     initScrollAnimations();
     initCounterAnimation();
@@ -72,77 +71,7 @@ function initMobileMenu() {
     });
 }
 
-/* ========================================
-   Podcast Player Tab Switching
-   ======================================== */
-function initPodcastPlayer() {
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    const playerFrames = document.querySelectorAll('.player-frame');
-    
-    if (!tabButtons.length || !playerFrames.length) return;
-    
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const platform = this.getAttribute('data-platform');
-            
-            // Remove active class from all tabs and frames
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            playerFrames.forEach(frame => frame.classList.remove('active'));
-            
-            // Add active class to selected tab
-            this.classList.add('active');
-            
-            // Show corresponding player
-            const selectedPlayer = document.getElementById(`${platform}-player`);
-            if (selectedPlayer) {
-                selectedPlayer.classList.add('active');
-                
-                // Load embed only when tab is clicked (lazy loading)
-                loadPodcastEmbed(platform);
-            }
-        });
-    });
-    
-    // Load Spotify embed by default after a short delay
-    setTimeout(() => {
-        loadPodcastEmbed('spotify');
-    }, 1000);
-}
-
-/* Load Podcast Embeds */
-function loadPodcastEmbed(platform) {
-    const playerContainer = document.getElementById(`${platform}-player`);
-    if (!playerContainer || playerContainer.dataset.loaded === 'true') return;
-    
-    if (platform === 'spotify') {
-        // Replace with your actual Spotify podcast embed URL
-        playerContainer.innerHTML = `
-            <iframe 
-                style="border-radius:12px" 
-                src="https://open.spotify.com/embed/show/YOUR_SPOTIFY_SHOW_ID?utm_source=generator&theme=0" 
-                width="100%" 
-                height="350" 
-                frameBorder="0" 
-                allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy">
-            </iframe>
-        `;
-    } else if (platform === 'apple') {
-        // Replace with your actual Apple Podcasts embed URL
-        playerContainer.innerHTML = `
-            <iframe 
-                style="width:100%;height:350px;border:none;overflow:hidden;" 
-                src="https://podcasts.apple.com/embed/YOUR_PODCAST_ID" 
-                loading="lazy"
-                frameBorder="0" 
-                scrolling="no">
-            </iframe>
-        `;
-    }
-    
-    playerContainer.dataset.loaded = 'true';
-}
+/* Podcast Player logic removed per user request to stick with Podbean iframe */
 
 /* ========================================
    Smooth Scroll for Anchor Links

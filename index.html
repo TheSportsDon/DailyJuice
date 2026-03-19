@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://dailyjuice.info/">
     
     <!-- SEO Meta Tags -->
     <title>Daily Juice | Join the Community – R20/month</title>
@@ -40,8 +41,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     
-    <!-- Google Analytics - UNCOMMENT AND REPLACE G-XXXXXXXXXX WITH YOUR MEASUREMENT ID -->
-    <!-- 
+    <!-- Google Analytics placeholder -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -49,7 +49,6 @@
       gtag('js', new Date());
       gtag('config', 'G-XXXXXXXXXX');
     </script>
-    -->
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -79,13 +78,14 @@
     </script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
                 <picture>
                     <source srcset="images/Core_Logo.webp" type="image/webp">
-                    <img src="assets/images/logo.png" alt="Daily Juice Logo" height="50">
+                    <img src="images/Core_Logo.webp" alt="Daily Juice Logo" height="50" style="border-radius: var(--radius-sm);">
                 </picture>
             </a>
             <button class="mobile-menu-toggle" aria-label="Toggle Menu">
@@ -103,13 +103,14 @@
             </ul>
         </div>
     </nav>
-
+    
+    <main id="main-content">
     <!-- Hero Section -->
     <header id="hero" class="hero-section">
         <div class="hero-background"></div>
         <div class="container hero-container">
             <div class="hero-content">
-                <img src="images/Daily_Juice_.webp" alt="Daily Juice" class="hero-logo" loading="eager">
+                <img src="images/Daily_Juice_.webp" alt="Daily Juice" class="hero-logo" loading="eager" style="border-radius: var(--radius-md);">
                 <h1 class="hero-headline">Everybody has juice. Let’s hear what you’re sipping on.</h1>
                 <p class="hero-subheadline">Daily insights. Shared wisdom. A community growing something real. Join the movement.</p>
                 <div class="hero-cta">
@@ -125,7 +126,7 @@
             <div class="hero-visual">
                 <picture>
                     <source srcset="images/Hero_Visual__Fruit_.webp" type="image/webp">
-                    <img src="assets/images/hero-fruits.png" alt="Fresh fruits representing community wisdom" class="hero-image" loading="eager">
+                    <img src="images/Hero_Visual__Fruit_.webp" alt="Fresh fruits representing community wisdom" class="hero-image" loading="eager" style="border-radius: var(--radius-lg);">
                 </picture>
             </div>
         </div>
@@ -237,13 +238,13 @@
                 </div>
                 
                 <div class="mission-visual">
-                    <img src="assets/images/fruit-farm-concept.png" alt="Community fruit farm concept" class="mission-image" loading="lazy">
+                    <img src="images/concept_fruit_farm.webp" alt="Community fruit farm concept" class="mission-image" loading="lazy" style="border-radius: var(--radius-lg);">
                     
                     <div class="illustration-gallery">
-                        <img src="assets/images/illustrations/power-to-succeed.png" alt="You have the power to succeed illustration">
+                        <img src="assets/images/illustrations/power-to-succeed.png" alt="You have the power to succeed illustration" style="border-radius: var(--radius-md);">
                         <picture>
                             <source srcset="images/Believe_and_Shine_202603191537.webp" type="image/webp">
-                            <img src="assets/images/illustrations/believe-and-shine.png" alt="Believe in yourself and shine illustration" loading="lazy">
+                            <img src="images/Believe_and_Shine_202603191537.webp" alt="Believe in yourself and shine illustration" loading="lazy" style="border-radius: var(--radius-md);">
                         </picture>
                     </div>
                 </div>
@@ -385,6 +386,7 @@
             </div>
         </div>
     </footer>
+    </main>
 
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>
